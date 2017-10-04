@@ -1,0 +1,18 @@
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} { @content; }
+
+    @-moz-keyframes #{$name} { @content; }
+
+    @keyframes #{$name} { @content; }
+
+    //@-o-keyframes $animation_name { @content; }
+}
+
+/*
+    Example:
+
+    @include keyframes(fadeIn) {
+        from { opacity: 0%; }
+        to { opacity: 100%; }
+    }
+*/

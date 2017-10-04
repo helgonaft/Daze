@@ -1,0 +1,70 @@
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs:                  480px;
+$screen-xs-min:              $screen-xs;
+$screen-phone:               $screen-xs-min;
+
+// Small screen / tablet
+$screen-sm:                  768px;
+$screen-sm-min:              $screen-sm;
+$screen-tablet:              $screen-sm-min;
+
+// Medium screen / desktop
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
+$screen-desktop:             $screen-md-min;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px;
+$screen-lg-min:              $screen-lg;
+$screen-lg-desktop:          $screen-lg-min;
+
+// Extra Large screen / 4k desktop
+$screen-xl:                  1800px;
+$screen-xl-min:              $screen-xl;
+$screen-xl-desktop:          $screen-xl-min;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xxs-max:             ($screen-xs-min - 1);
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);
+$screen-lg-max:              ($screen-xl-min - 1);
+
+// Define media prefix
+$medias: (0: null, $screen-xs-min : xs, $screen-sm-min : sm, $screen-md-min : md, $screen-lg-min : lg, $screen-xl-min : xl);
+
+
+
+
+
+@mixin mobile {
+  @media only screen and (max-width: $screen-sm-max) { @content; }
+}
+
+@mixin mobile-only {
+  @media only screen and (max-width: $screen-xs-max) { @content; }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: $screen-sm-min) { @content; }
+}
+
+@mixin tablet-only {
+  @media only screen and (min-width: $screen-sm) and (max-width: $screen-sm-max) { @content; }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $screen-md-min) { @content; }
+}
+
+@mixin desktop-lg {
+  @media only screen and (min-width: $screen-lg) { @content; }
+}
+
+@mixin desktop-xl {
+  @media only screen and (min-width: $screen-xl) { @content; }
+}

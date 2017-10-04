@@ -1,0 +1,372 @@
+/*
+  < Imports >
+*/
+@font-face {
+  font-family: 'OpenSansHebrew-Regular';
+  src: url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.eot");
+  src: url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.eot") format("embedded-opentype"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff") format("woff"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.ttf") format("truetype"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.svg") format("svg");
+}
+@font-face {
+  font-family: 'OpenSansHebrew-Light';
+  src: url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.eot");
+  src: url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.eot") format("embedded-opentype"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff") format("woff"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.ttf") format("truetype"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.svg") format("svg");
+}
+@font-face {
+  font-family: 'OpenSansHebrew-Bold';
+  src: url("../fonts/OpenSansHebrew/OpenSansHebrew-Bold.eot");
+  src: url("../fonts/OpenSansHebrew/OpenSansHebrew-Bold.eot") format("embedded-opentype"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff") format("woff"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Bold.ttf") format("truetype"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Bold.svg") format("svg");
+}
+/*
+This mixin does not allow to use multiple box-shadows
+@mixin box-shadow($x: 0, $y: 0, $blur: 5px, $spread: 5px, $color: rgba(0,0,0,.4), $inset: "") {
+    @if ($inset != "") {
+        @include css3-prefix('box-shadow', $inset $x $y $blur $spread $color);
+    } @else {
+        @include css3-prefix('box-shadow', $x $y $blur $spread $color);
+    }
+}
+*/
+/*
+user-select: none;
+user-select: auto;
+user-select: text;
+user-select: contain;
+user-select: all;
+
+-moz-user-select: none;
+-moz-user-select: text;
+-moz-user-select: all;
+
+-webkit-user-select: none;
+-webkit-user-select: text;
+-webkit-user-select: all; /* does not work in Safari, use only "none" or "text", or else it will allow to type in the html container*/
+/*
+-ms-user-select: none;
+-ms-user-select: text;
+-ms-user-select: element;
+
+*/
+/*
+.a {
+    @include absolute();
+}
+
+.b {
+    @include absolute(top);
+}
+
+.c {
+    @include absolute(top right);
+}
+
+.d {
+    @include absolute(top right bottom);
+}
+
+.e {
+    @include absolute(top right bottom left);
+}
+
+.f {
+    @include absolute(top right 1em);
+}
+
+.g {
+    @include absolute(top 1em right);
+}
+
+.h {
+    @include absolute(top 1em right 100%);
+}
+
+.i {
+    @include absolute(top right mistake);
+}
+
+.j {
+    @include absolute(top 1em right 1em bottom 1em left 1em)
+}
+*/
+/*
+    Example:
+    @include animation(10s, 5s, changecolour, infinite)
+ */
+@media only screen and (max-width: 991px) {
+  /* line 15, ../sass/helpers/_typography.scss */
+  .font-size-xs {
+    font-size: 0;
+  }
+
+  /* line 16, ../sass/helpers/_typography.scss */
+  .font-size-sm {
+    font-size: 0;
+  }
+
+  /* line 17, ../sass/helpers/_typography.scss */
+  .font-size-md {
+    font-size: 0;
+  }
+
+  /* line 18, ../sass/helpers/_typography.scss */
+  .font-size-lg {
+    font-size: 0;
+  }
+
+  /* line 19, ../sass/helpers/_typography.scss */
+  .font-size-xl {
+    font-size: 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* line 23, ../sass/helpers/_typography.scss */
+  .font-size-xs {
+    font-size: 0;
+  }
+
+  /* line 24, ../sass/helpers/_typography.scss */
+  .font-size-sm {
+    font-size: 0;
+  }
+
+  /* line 25, ../sass/helpers/_typography.scss */
+  .font-size-md {
+    font-size: 0;
+  }
+
+  /* line 26, ../sass/helpers/_typography.scss */
+  .font-size-lg {
+    font-size: 0;
+  }
+
+  /* line 27, ../sass/helpers/_typography.scss */
+  .font-size-xl {
+    font-size: 0;
+  }
+}
+/* line 30, ../sass/helpers/_typography.scss */
+.text-light {
+  font-family: inherit;
+}
+
+/* line 31, ../sass/helpers/_typography.scss */
+.text-regular {
+  font-family: inherit;
+}
+
+/* line 32, ../sass/helpers/_typography.scss */
+.text-bold {
+  font-family: inherit;
+}
+
+@media only screen and (min-width: 992px) {
+  /* line 1, ../sass/modules/_states.scss */
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 2, ../sass/modules/_states.scss */
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+/* line 4, ../sass/modules/_states.scss */
+.is-hidden {
+  display: none !important;
+}
+
+/* line 5, ../sass/modules/_states.scss */
+.is-visible {
+  display: block !important;
+}
+
+/* line 1, ../sass/base/_base.scss */
+html,
+p,
+ul,
+ol,
+li,
+input[type="submit"],
+button {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, ../sass/base/_base.scss */
+body {
+  direction: ltr;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 18, ../sass/base/_base.scss */
+body,
+input {
+  line-height: 1em;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+@media only screen and (max-width: 991px) {
+  /* line 18, ../sass/base/_base.scss */
+  body,
+  input {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* line 18, ../sass/base/_base.scss */
+  body,
+  input {
+    font-size: 1rem;
+  }
+}
+
+/* line 37, ../sass/base/_base.scss */
+main {
+  display: block;
+}
+
+/* line 41, ../sass/base/_base.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 46, ../sass/base/_base.scss */
+ul, ol {
+  list-style: none;
+}
+
+/* line 50, ../sass/base/_base.scss */
+label {
+  display: block;
+}
+
+/* line 54, ../sass/base/_base.scss */
+input,
+select {
+  border: none;
+}
+
+/* line 59, ../sass/base/_base.scss */
+input[type="submit"] {
+  background-color: initial;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 65, ../sass/base/_base.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  border: none;
+}
+
+/* line 70, ../sass/base/_base.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* line 77, ../sass/base/_base.scss */
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+/* line 82, ../sass/base/_base.scss */
+button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+/* line 88, ../sass/base/_base.scss */
+img {
+  display: block;
+}
+
+/* line 93, ../sass/base/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  background-repeat: no-repeat;
+}
+
+/*
+  < Styles >
+*/
+/* line 20, ../sass/style.scss */
+.main-view {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100vh;
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+/* line 26, ../sass/style.scss */
+.main-view .main-header {
+  border-left: 3px solid white;
+  padding-left: 20px;
+}
+/* line 29, ../sass/style.scss */
+.main-view .main-header h1 {
+  margin: 0;
+  color: white;
+  font-size: 33px;
+}
+/* line 34, ../sass/style.scss */
+.main-view .main-header h1:last-child {
+  margin-top: 30px;
+}
+
+/* line 41, ../sass/style.scss */
+.content {
+  padding: 0 15vw;
+}
+/* line 43, ../sass/style.scss */
+.content #section-1 {
+  padding-top: 7vw;
+}
+/* line 45, ../sass/style.scss */
+.content #section-1 h2, .content #section-1 p {
+  font-size: 40px;
+  color: #212b2d;
+}
+/* line 49, ../sass/style.scss */
+.content #section-1 p {
+  margin-top: 25px;
+  font-size: 30px;
+  line-height: 35px;
+}

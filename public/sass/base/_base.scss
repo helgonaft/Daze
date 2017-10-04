@@ -1,0 +1,97 @@
+html,
+p,
+ul,
+ol,
+li,
+input[type="submit"],
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  direction: ltr;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input {
+  line-height: 1em;
+  //TODO: change font
+  //font-family: "OpenSansHebrew-Regular", sans-serif;
+  color: #333;
+  -webkit-font-smoothing:  antialiased;
+
+  // mobile
+  @include mobile() {
+    font-size: 1rem;
+  }
+
+  // desktop
+  @include desktop() {
+    font-size: 1rem;
+  }
+}
+
+main {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+label {
+  display: block;
+}
+
+input,
+select {
+  border: none;
+}
+
+input[type="submit"] {
+  background-color: initial;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  border: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::-moz-focus-inner {
+    padding: 0;
+    border: none;
+  }
+}
+
+img {
+  display: block;
+}
+
+
+* {
+  @include box-sizing();
+  outline: none;
+  background-repeat: no-repeat;
+}

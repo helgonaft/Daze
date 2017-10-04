@@ -1,0 +1,5 @@
+.mobile-only  { @include desktop { display: none !important; } }
+.desktop-only { @include mobile { display: none !important; } }
+
+.is-hidden  { display: none !important; }
+.is-visible { display: block !important; }

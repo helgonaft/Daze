@@ -1,0 +1,34 @@
+$OpenSansHebrew-Regular:   "../fonts/OpenSansHebrew/OpenSansHebrew-Regular";
+$OpenSansHebrew-Light:   "../fonts/OpenSansHebrew/OpenSansHebrew-Light";
+$OpenSansHebrew-Bold:   "../fonts/OpenSansHebrew/OpenSansHebrew-Bold";
+
+
+@font-face {
+  font-family: 'OpenSansHebrew-Regular';
+  src: url('#{$OpenSansHebrew-Regular}.eot');
+  src:
+    url('#{$OpenSansHebrew-Regular}.eot') format('embedded-opentype'),
+    url('#{$OpenSansHebrew-Regular}.woff') format('woff'),
+    url('#{$OpenSansHebrew-Regular}.ttf') format('truetype'),
+    url('#{$OpenSansHebrew-Regular}.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'OpenSansHebrew-Light';
+  src: url('#{$OpenSansHebrew-Regular}.eot');
+  src:
+    url('#{$OpenSansHebrew-Regular}.eot') format('embedded-opentype'),
+    url('#{$OpenSansHebrew-Regular}.woff') format('woff'),
+    url('#{$OpenSansHebrew-Regular}.ttf') format('truetype'),
+    url('#{$OpenSansHebrew-Regular}.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'OpenSansHebrew-Bold';
+  src: url('#{$OpenSansHebrew-Bold}.eot');
+  src:
+    url('#{$OpenSansHebrew-Bold}.eot') format('embedded-opentype'),
+    url('#{$OpenSansHebrew-Bold}.woff') format('woff'),
+    url('#{$OpenSansHebrew-Bold}.ttf') format('truetype'),
+    url('#{$OpenSansHebrew-Bold}.svg') format('svg');
+}
