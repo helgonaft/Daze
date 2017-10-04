@@ -359,14 +359,40 @@ img {
 .content #section-1 {
   padding-top: 7vw;
 }
-/* line 45, ../sass/style.scss */
-.content #section-1 h2, .content #section-1 p {
+/* line 46, ../sass/style.scss */
+.content #section-1 header h2, .content #section-1 header p {
   font-size: 40px;
   color: #212b2d;
 }
-/* line 49, ../sass/style.scss */
-.content #section-1 p {
+/* line 50, ../sass/style.scss */
+.content #section-1 header p {
   margin-top: 25px;
   font-size: 30px;
   line-height: 35px;
+}
+/* line 58, ../sass/style.scss */
+.content .two-buttons {
+  padding: 0 50px;
+}
+/* line 60, ../sass/style.scss */
+.content .two-buttons .wrap-btn {
+  padding: 0 50px;
+}
+/* line 62, ../sass/style.scss */
+.content .two-buttons .wrap-btn .button {
+  margin: 90px 0;
+  padding: 15px;
+}
+/* line 66, ../sass/style.scss */
+.content .two-buttons .wrap-btn .button .btn-text {
+  font-size: 30px;
+  color: white;
+}
+/* line 70, ../sass/style.scss */
+.content .two-buttons .wrap-btn .button-dark {
+  background-color: #212b2d;
+}
+/* line 74, ../sass/style.scss */
+.content .two-buttons .wrap-btn .button-light {
+  background-color: #29858f;
 }

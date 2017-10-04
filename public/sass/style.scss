@@ -42,14 +42,42 @@
   padding: 0 15vw;
   #section-1 {
     padding-top: 7vw;
-    h2,p {
-      font-size: 40px;
-      color: $brand-dark-color;
+    header{
+      h2,p {
+        font-size: 40px;
+        color: $brand-dark-color;
+      }
+      p {
+        margin-top: 25px;
+        font-size: 30px;
+        line-height: 35px;
+      }
     }
-    p {
-      margin-top: 25px;
-      font-size: 30px;
-      line-height: 35px;
-    }
+
   }
+  .two-buttons {
+    padding: 0 50px;
+    .wrap-btn {
+      padding: 0 50px;
+      .button {
+        margin: 90px 0;
+        padding: 15px;
+
+        .btn-text{
+          font-size: 30px;
+          color: white;
+        }
+        &-dark{
+          background-color: $brand-dark-color;
+        }
+
+        &-light{
+          background-color: $brand-color;
+        }
+
+      }
+    }
+
+  }
+
 }
