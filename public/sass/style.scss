@@ -39,9 +39,9 @@
 
 }
 .content {
-  padding: 0 15vw;
+  padding: 0;
   #section-1 {
-    padding-top: 7vw;
+    padding: 7vw 15vw;
     header{
       h2,p {
         font-size: 40px;
@@ -55,16 +55,52 @@
     }
 
   }
+
+  #section-video {
+    height: 28vw;
+    background-color: $brand-gray;
+  }
+
+  #section-features {
+    padding: 3vw 7vw;
+
+      .feature {
+        @include flex-parent($fd: column, $jc: flex-end, $ai: flex-start);
+        width: 100%;
+        height: 13vw;
+        margin: 2vw 0 1vw 0;
+        //TODO: change to images later
+        background-color: $brand-gray;
+
+          p {
+            margin: 3vw;
+            font-size: 20px;
+            line-height: 24px;
+            color: white;
+          }
+      }
+
+      .small-description {
+        padding: 0 3vw;
+        font-size: 15px;
+        color: $brand-gray;
+      }
+  }
+
+  #section-industries {
+    padding: 3vw 7vw;
+  }
+
   .two-buttons {
     padding: 0 50px;
     .wrap-btn {
       padding: 0 50px;
       .button {
         margin: 90px 0;
-        padding: 15px;
+        padding: 20px 15px;
 
         .btn-text{
-          font-size: 30px;
+          font-size: 25px;
           color: white;
         }
         &-dark{
@@ -78,6 +114,11 @@
       }
     }
 
+  }
+
+  .section-header {
+    color: $brand-color;
+    font-size: 30px;
   }
 
 }
