@@ -62,7 +62,7 @@
   }
 
   #section-features {
-    padding: 3vw 7vw;
+    padding: 3vw 14vw;
 
       .feature {
         @include flex-parent($fd: column, $jc: flex-end, $ai: flex-start);
@@ -82,13 +82,75 @@
 
       .small-description {
         padding: 0 3vw;
-        font-size: 15px;
+        font-size: 13px;
         color: $brand-gray;
       }
   }
 
   #section-industries {
-    padding: 3vw 7vw;
+    padding: 3vw 14vw;
+      .industries {
+        width: 100%;
+        padding: 50px 0;
+          .industry {
+            padding: 15px 45px 25px 30px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid $brand-dark-color;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            h3 {
+              margin: 0;
+              font-size: 28px;
+              font-weight: bold;
+              color: $brand-dark-color;
+            }
+            p {
+              padding-top: 20px;
+              font-size: 22px;
+              color: $brand-dark-color;
+
+                span {
+                  float: right;
+                  margin-top: -30px;
+                  font-size: 30px;
+                }
+            }
+
+            &.is-active {
+              border-left: 5px solid $brand-dark-color;
+              border-bottom: 5px solid $brand-dark-color;
+                p {
+                  span {
+                    color: $brand-color;
+                  }
+                }
+            }
+          }
+      }
+  }
+
+  #section-experience {
+    padding: 3vw 14vw;
+      img {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+      }
+  }
+
+  #section-testimonials {
+    padding: 3vw 14vw;
+  }
+
+  #section-about {
+    padding: 3vw 14vw;
+  }
+
+  #section-contacts {
+    padding: 3vw 14vw;
   }
 
   .two-buttons {
