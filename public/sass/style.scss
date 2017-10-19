@@ -151,10 +151,10 @@
     }
 
     .client {
-      color: $brand-gray;
+      color: $brand-dark-color;
       .quote {
         padding: 20px 0;
-        border-top: 5px solid $brand-gray;
+        border-top: 5px solid $brand-dark-color;
         .text {
           font-size: 18px;
           line-height: 28px;
@@ -178,10 +178,47 @@
 
   #section-about {
     padding: 3vw 14vw;
+    .about-us {
+      p {
+        margin-top: 40px;
+        font-size: 25px;
+        line-height: 33px;
+      }
+    }
+    .photos {
+      margin: 50px 0;
+      width: 100%;
+      .row-photos {
+        @include flex-parent($fd: row, $ai: flex-start, $jc: space-between);
+      }
+      .person {
+        padding: 0;
+        width: 32%;
+        .portrait {
+          width: 100%;
+          height: 200px;
+          background-color: $brand-dark-color;
+        }
+        .who {
+          margin: 15px 0;
+          font-size: 24px;
+          line-height: 24px;
+
+        }
+      }
+
+
+    }
   }
 
   #section-contacts {
     padding: 3vw 14vw;
+    .contacts-text {
+      margin: 40px 0;
+      font-size: 25px;
+      line-height: 33px;
+      color: $brand-dark-color;
+    }
   }
 
   .two-buttons {
