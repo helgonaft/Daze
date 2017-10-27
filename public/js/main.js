@@ -20,6 +20,7 @@ $(document).ready(function(){
         else{
             $('.industry').removeClass('is-active');
             $('.details').slideUp();
+            $('.industry').find('span').removeClass('glyphicon-triangle-top').addClass( 'glyphicon-triangle-bottom');
             $(target_id).slideDown();
             $(this).addClass('is-active');
             $(this).find('span').removeClass('glyphicon-triangle-bottom').addClass( 'glyphicon-triangle-top');
