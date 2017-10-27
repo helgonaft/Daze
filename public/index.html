@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-3.2.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
   <div class="parallax">
     <div class="container-fluid main-view parallax__layer parallax__layer--back">
-        <header><img src="images/logo.png"></header>
-        <div class="main-header">
-          <h1> Making every single</h1>
-          <h1> person a great presenter</h1>
+        <nav class="navbar menu">
+          <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li><a class="anchor" href="#section-features">Features</a></li>
+                <li><a href="#section-industries">Industries</a></li>
+                <li><a href="#section-experience">Experience</a></li>
+                <li><a href="#section-testimonials">Testimonials</a></li>
+                <li><a href="#section-about">About us</a></li>
+                <li><a href="#section-contacts">Contacts</a></li>
+              </ul>
+          </div>
+        </nav>
+        <div class="logo">
+          <div class="daze-logo">
+            <img src="images/daze-logo.png">
+          </div>
+          <div class="header-text">
+            <h1> Making every single person a great presenter</h1>
+          </div>
         </div>
     </div>
   <div class="container-fluid content parallax__layer parallax__layer--bottom parallax__layer--base">
@@ -23,7 +40,7 @@
       </header>
       <div class="row two-buttons">
         <div class="col-md-6 wrap-btn">
-          <div class="button button-light">
+          <div class="button button-dark">
             <p class="btn-text"> Create presentation </p>
           </div>
         </div>
@@ -69,21 +86,64 @@
     <section id="section-industries">
       <h3 class="section-header">Industries</h3>
       <div class="industries">
-        <div class="industry is-active">
+        <div class="industry" data-id="#details-startup">
           <h3>Daze for: startups</h3>
           <p>Let Daze make your deck really fundraising <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></p>
         </div>
-        <div class="industry">
+        <div class="details" id="details-startup">
+          <p>You have already developed a great business plan, put the right core team together, and even found potential investors to bring your idea to life. And now you have a little left to do - just creating a winning pitch deck. Actually, building a great startup presentation is really time-consuming and challenging task. Need some help? We know how to impress your angels with a storytelling, concise and impactful pitch deck.<br><br>
+
+            Save your time and rely on our experience to get a perfect presentation that reflects your unique story. Let us make you stand out from the crowd.<br><br>
+
+            We are able to provide you with high-quality infographics, content assistance, and custom templates. Take advantage of our design services and enjoy our comprehensive approach of visualizing your ideas.<br><br>
+
+            You also can easily create an amazing pitch deck yourself using AI-based recommendations. Feel free to experiment with Daze and remember we are always here to help you!<br><br>
+          </p>
+        </div>
+        <div class="industry" data-id="#details-corporations">
           <h3>Daze for: corporations</h3>
           <p>Enhance your meetings with impactful presentations!<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></p>
         </div>
-        <div class="industry">
+        <div class="details" id="details-corporations">
+          <p>Working on a report? Released a project and want to share key takeaways? Have no time to create a presentation for colleagues?<br><br>
+
+            We are here to enhance your corporate meetings with perfect presentations!<br><br>
+
+            Take advantage of interactive visualization and make your data live.<br><br>
+
+            Enjoy communication with your foreign colleagues using real-time remote control.<br><br>
+
+            Forget about stretched images and poor design. Let us create custom templates for your company and be on firm ground while presenting.<br><br>
+          </p>
+        </div>
+        <div class="industry" data-id="#details-sales">
           <h3>Daze for: sales & marketing persons</h3>
           <p>Join the community of lucky sales people!<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></p>
         </div>
-        <div class="industry">
+        <div class="details" id="details-sales">
+          <p>People market and sell their ideas, products, and services everyday. But there are some of them who do it perfectly. And you can join these lucky guys.<br><br>
+
+            Do not know how to engage potential customers? We can help you stand in your prospects’ shoes.<br><br>
+
+            Looking for a quick solution for multiple clients? We have smart templates for you.<br><br>
+
+            Need some professional advice? We are always here to provide you with on-demand expert help.<br><br>
+          </p>
+        </div>
+        <div class="industry" data-id="#details-personal">
           <h3>Daze for: personal use</h3>
           <p>Save hours on experiments with your presentation!<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></p>
+        </div>
+        <div class="details" id="details-personal">
+          <p>Daze team would be happy to contribute to your personal success and professional growth. <br><br>
+
+            We all have first-hand experience in job search. That is why we know employers’ expectations and can help you favorably differentiate yourself from other candidates with a stunning self-presentation.<br><br>
+
+            We also have diverse academic background and would really appreciate if you entrusted us with creation of your studies and achievements presentation.<br><br>
+
+            We are open to collaborate with NGOs, social startups, students, activists and whoever looking for professional advice in creating presentation materials.
+
+          </p>
         </div>
       </div>
     </section>
@@ -168,7 +228,7 @@
         Here at Daze, we are working to help (talented) people achieve great results with stunning presentations. Our core mission is to discover, empower, and deliver your ideas to the target audience in the right way. </p>
       <div class="row two-buttons">
         <div class="col-md-6 wrap-btn">
-          <div class="button button-light">
+          <div class="button button-dark">
             <p class="btn-text"> Create presentation </p>
           </div>
         </div>
