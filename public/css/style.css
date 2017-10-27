@@ -444,8 +444,9 @@ img {
 /* line 125, ../sass/style.scss */
 .content #section-features {
   padding: 3vw 14vw;
+  background: white;
 }
-/* line 128, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .content #section-features .feature {
   display: -webkit-box;
   display: -webkit-flex;
@@ -477,7 +478,7 @@ img {
   margin: 2vw 0 1vw 0;
   background-color: #414a4b;
 }
-/* line 136, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .content #section-features .feature p {
   margin: 3vw 0;
   padding: 0 20px;
@@ -485,109 +486,112 @@ img {
   line-height: 24px;
   color: white;
 }
-/* line 145, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .content #section-features .small-description {
   padding: 0 20px;
   font-size: 13px;
   line-height: 13px;
   color: #414a4b;
 }
-/* line 153, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .content #section-industries {
   padding: 3vw 14vw;
+  background: white;
 }
-/* line 155, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .content #section-industries .industries {
   width: 100%;
   padding: 50px 0;
 }
-/* line 158, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .content #section-industries .industries .industry {
   padding: 15px 45px 25px 30px;
   margin-bottom: 15px;
   border-bottom: 1px solid #212b2d;
   border-left: 5px solid transparent;
 }
-/* line 164, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .content #section-industries .industries .industry:hover {
   cursor: pointer;
 }
-/* line 168, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .content #section-industries .industries .industry:last-child {
   margin-bottom: 0;
 }
-/* line 172, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .content #section-industries .industries .industry h3 {
   margin: 0;
   font-size: 28px;
   font-weight: bold;
   color: #212b2d;
 }
-/* line 178, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 .content #section-industries .industries .industry p {
   padding-top: 20px;
   font-size: 22px;
   color: #212b2d;
 }
-/* line 183, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .content #section-industries .industries .industry p span {
   float: right;
   margin-top: -30px;
   font-size: 30px;
 }
-/* line 190, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .content #section-industries .industries .industry.is-active {
   border-left: 5px solid #212b2d;
   border-bottom: 5px solid #212b2d;
 }
-/* line 194, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .content #section-industries .industries .industry.is-active p span {
   color: #235a87;
 }
-/* line 200, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .content #section-industries .industries .details {
   display: none;
 }
-/* line 202, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .content #section-industries .industries .details p {
   font-size: 22px;
   line-height: 30px;
 }
-/* line 210, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .content #section-experience {
   padding: 3vw 14vw;
+  background: white;
 }
-/* line 212, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .content #section-experience img {
   width: 100%;
   height: auto;
   margin-top: 40px;
 }
-/* line 219, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 .content #section-testimonials {
   padding: 3vw 14vw;
+  background: white;
 }
-/* line 222, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .content #section-testimonials h3 {
   margin-bottom: 50px;
 }
-/* line 226, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .content #section-testimonials .client {
   color: #212b2d;
 }
-/* line 228, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 .content #section-testimonials .client .quote {
   padding: 20px 0;
   border-top: 5px solid #212b2d;
 }
-/* line 231, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .content #section-testimonials .client .quote .text {
   font-size: 18px;
   line-height: 28px;
   text-align: left;
   word-wrap: break-word;
 }
-/* line 237, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 .content #section-testimonials .client .quote .signature {
   margin: 20px 0 10px 0;
   text-align: right;
@@ -595,27 +599,28 @@ img {
   line-height: 20px;
   font-weight: bold;
 }
-/* line 244, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 .content #section-testimonials .client .quote .position {
   font-size: 15px;
   text-align: right;
 }
-/* line 252, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 .content #section-about {
   padding: 3vw 14vw;
+  background: white;
 }
-/* line 255, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 .content #section-about .about-us p {
   margin-top: 40px;
   font-size: 25px;
   line-height: 33px;
 }
-/* line 261, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 .content #section-about .photos {
   margin: 50px 0;
   width: 100%;
 }
-/* line 264, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 .content #section-about .photos .row-photos {
   display: -webkit-box;
   display: -webkit-flex;
@@ -643,82 +648,211 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-/* line 267, ../sass/style.scss */
+/* line 272, ../sass/style.scss */
 .content #section-about .photos .person {
   padding: 0;
   width: 32%;
 }
-/* line 270, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 .content #section-about .photos .person .portrait {
   width: 100%;
   height: 200px;
   background-color: #212b2d;
 }
-/* line 275, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 .content #section-about .photos .person .who {
   margin: 15px 0;
   font-size: 24px;
   line-height: 24px;
 }
-/* line 287, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 .content #section-contacts {
   padding: 3vw 14vw;
+  background: white;
 }
-/* line 289, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 .content #section-contacts .contacts-text {
   margin: 40px 0;
   font-size: 25px;
   line-height: 33px;
   color: #212b2d;
 }
-/* line 297, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
+.content .contact-form_block {
+  padding: 30px 50px;
+  background: #212b2d;
+  color: white;
+}
+/* line 306, ../sass/style.scss */
+.content .contact-form_block .bottom-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/* line 311, ../sass/style.scss */
+.content .contact-form_block .bottom-menu .navbar-nav li {
+  margin: 0 10px;
+}
+/* line 313, ../sass/style.scss */
+.content .contact-form_block .bottom-menu .navbar-nav li.active {
+  background: none !important;
+}
+/* line 316, ../sass/style.scss */
+.content .contact-form_block .bottom-menu .navbar-nav li a {
+  padding: 0 0 4px 0;
+  color: white;
+  font-size: 17px;
+}
+/* line 321, ../sass/style.scss */
+.content .contact-form_block .bottom-menu .navbar-nav li a:hover {
+  color: white;
+  background: none;
+  border-bottom: 2px solid white;
+}
+/* line 326, ../sass/style.scss */
+.content .contact-form_block .bottom-menu .navbar-nav li a:active {
+  color: white;
+  background: none;
+  border-bottom: 2px solid white;
+}
+/* line 331, ../sass/style.scss */
+.content .contact-form_block .bottom-menu .navbar-nav li a:visited {
+  color: white;
+  background: none;
+}
+/* line 335, ../sass/style.scss */
+.content .contact-form_block .bottom-menu .navbar-nav li a:focus {
+  color: white;
+  background: none;
+  outline: none;
+}
+/* line 345, ../sass/style.scss */
+.content .contact-form_block .contact-form {
+  width: 100%;
+  padding-left: 40px;
+}
+/* line 348, ../sass/style.scss */
+.content .contact-form_block .contact-form form {
+  width: 100%;
+  border: 1px solid white;
+  padding: 40px;
+}
+/* line 352, ../sass/style.scss */
+.content .contact-form_block .contact-form form input, .content .contact-form_block .contact-form form textarea {
+  -webkit-border-radius: 0;
+  -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  padding: 15px 0 5px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  outline: none;
+  box-shadow: none;
+}
+/* line 414, ../sass/helpers/_mixins.scss */
+.content .contact-form_block .contact-form form input::-webkit-input-placeholder, .content .contact-form_block .contact-form form textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white;
+}
+/* line 418, ../sass/helpers/_mixins.scss */
+.content .contact-form_block .contact-form form input::-moz-placeholder, .content .contact-form_block .contact-form form textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+/* line 422, ../sass/helpers/_mixins.scss */
+.content .contact-form_block .contact-form form input:-ms-input-placeholder, .content .contact-form_block .contact-form form textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: white;
+}
+/* line 426, ../sass/helpers/_mixins.scss */
+.content .contact-form_block .contact-form form input:-moz-placeholder, .content .contact-form_block .contact-form form textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+/* line 365, ../sass/style.scss */
+.content .contact-form_block .contact-form form input:active, .content .contact-form_block .contact-form form input:focus, .content .contact-form_block .contact-form form textarea:active, .content .contact-form_block .contact-form form textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* line 370, ../sass/style.scss */
+.content .contact-form_block .contact-form form textarea {
+  resize: vertical;
+}
+/* line 379, ../sass/style.scss */
 .content .two-buttons {
   padding: 0 50px;
 }
-/* line 299, ../sass/style.scss */
+/* line 381, ../sass/style.scss */
 .content .two-buttons .wrap-btn {
   padding: 0 50px;
 }
-/* line 301, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button {
   margin: 90px 0;
   padding: 20px 15px;
 }
-/* line 304, ../sass/style.scss */
+/* line 386, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button:hover {
   cursor: pointer;
 }
-/* line 308, ../sass/style.scss */
+/* line 390, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button .btn-text {
   font-size: 25px;
   color: white;
 }
-/* line 312, ../sass/style.scss */
+/* line 394, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button-dark {
-  -webkit-transition: all, ease, 0.7s;
-  -khtml-transition: all, ease, 0.7s;
-  -moz-transition: all, ease, 0.7s;
-  -ms-transition: all, ease, 0.7s;
-  -o-transition: all, ease, 0.7s;
-  transition: all, ease, 0.7s;
+  -webkit-transition: all, ease, 0.6s;
+  -khtml-transition: all, ease, 0.6s;
+  -moz-transition: all, ease, 0.6s;
+  -ms-transition: all, ease, 0.6s;
+  -o-transition: all, ease, 0.6s;
+  transition: all, ease, 0.6s;
   background-color: #212b2d;
 }
-/* line 316, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button-dark:hover {
   background-color: #235a87;
 }
-/* line 321, ../sass/style.scss */
+/* line 403, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button-light {
   background-color: #235a87;
 }
-/* line 330, ../sass/style.scss */
+/* line 412, ../sass/style.scss */
 .content .section-header {
   color: #235a87;
   font-size: 30px;
   font-weight: bold;
 }
 
-/* line 337, ../sass/style.scss */
+/* line 419, ../sass/style.scss */
 .parallax {
   perspective: 1px;
   height: 100vh;
@@ -727,7 +861,7 @@ img {
   overflow-y: auto;
 }
 
-/* line 344, ../sass/style.scss */
+/* line 426, ../sass/style.scss */
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -735,17 +869,17 @@ img {
   bottom: 0;
   left: -6px;
 }
-/* line 350, ../sass/style.scss */
+/* line 432, ../sass/style.scss */
 .parallax__layer--bottom {
   top: 100vh;
 }
 
-/* line 354, ../sass/style.scss */
+/* line 436, ../sass/style.scss */
 .parallax__layer--base {
   transform: translateZ(0);
 }
 
-/* line 357, ../sass/style.scss */
+/* line 439, ../sass/style.scss */
 .parallax__layer--back {
   transform: translateZ(-1px) scale(2);
 }
