@@ -217,7 +217,7 @@
   display: block;
   float: left;
   width: 25px;
-  height: 18px;
+  height: 20px;
   text-indent: -9999px;
   line-height: 100%;
   /* need this for IE6 */
@@ -225,17 +225,19 @@
   cursor: pointer; }
 
 .jp-full-screen {
-  background: url("../images/jplayer.pink.flag.jpg") 0 -420px no-repeat;
+  background: url("../images/fullscreen.png") no-repeat;
+  background-size: contain;
   margin-left: 15px; }
 
 .jp-full-screen:focus {
-  background: url("../images/jplayer.pink.flag.jpg") -30px -420px no-repeat; }
+  background: url("../images/fullscreen.png")   no-repeat; background-size: contain;}
 
 .jp-state-full-screen .jp-full-screen {
-  background: url("../images/jplayer.pink.flag.jpg") -60px -420px no-repeat; }
+  background: url("../images/fullscreen.png") no-repeat; background-size: contain;}
 
 .jp-state-full-screen .jp-full-screen:focus {
-  background: url("../images/jplayer.pink.flag.jpg") -90px -420px no-repeat; }
+  background: url("../images/fullscreen.png") no-repeat; background-size: contain;}
+
 
 .jp-repeat {
   background: url("../images/jplayer.pink.flag.jpg") 0 -440px no-repeat;
@@ -392,7 +394,7 @@ div.jp-video .jp-progress {
 .jp-current-time, .jp-duration {
   width: 70px;
   font-size: .5em;
-  color: #8c7a99; }
+  color: #e7ebf0; }
 
 .jp-current-time {
   float: left;
