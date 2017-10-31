@@ -208,8 +208,20 @@
 
     <section id="section-experience">
       <h3 class="section-header">Experience</h3>
-      <img src="images/experience.png">
+      <div class="exp-images">
+
+          <img src="images/exp-1.png"  data-toggle="modal" data-target="#modal-gallery">
+
+          <img src="images/exp-2.png" data-toggle="modal" data-target="#modal-gallery">
+
+          <img src="images/exp-3.png" data-toggle="modal" data-target="#modal-gallery">
+
+          <img src="images/exp-4.png" data-toggle="modal" data-target="#modal-gallery">
+
+      </div>
+
     </section>
+
 
     <section id="section-testimonials">
       <h3 class="section-header">Testimonials</h3>
@@ -217,21 +229,21 @@
         <div class="row">
           <div class="col-md-4 client">
             <div class="quote">
-              <p class="text">Daze is the next step for reliability when you have to present something. If you run any kind of presentation/pitch/meetup/seminar-based kind of event, you need to use Daze. This amazing tool does.</p>
+              <p class="text"><span class="quote-sign">"</span>Daze is the next step for reliability when you have to present something. If you run any kind of presentation/pitch/meetup/seminar-based kind of event, you need to use Daze. This amazing tool does.<span class="quote-sign">"</span></p>
               <p class="signature">Nick Bilogorskiy</p>
               <p class="position">position in the company</p>
             </div>
           </div>
           <div class="col-md-4 client">
             <div class="quote">
-              <p class="text">Daze is the next step for reliability when you have to present something. If you run any kind of presentation/pitch/meetup/seminar-based kind of event, you need to use Daze. This amazing tool does not require any non-sense setup, easy to use and very light, so even with a 56k modem will run perfectly.</p>
+              <p class="text"><span class="quote-sign">"</span>Daze is the next step for reliability when you have to present something. If you run any kind of presentation/pitch/meetup/seminar-based kind of event, you need to use Daze. This amazing tool does not require any non-sense setup, easy to use and very light, so even with a 56k modem will run perfectly.<span class="quote-sign">"</span></p>
               <p class="signature">Javier Hernandez</p>
               <p class="position">position in the company</p>
             </div>
           </div>
           <div class="col-md-4 client">
             <div class="quote">
-              <p class="text">For any business which uses presentation, Daze will make life a lot easier and a lot more interesting.
+              <p class="text"><span class="quote-sign">"</span>For any business which uses presentation, Daze will make life a lot easier and a lot more interesting.<span class="quote-sign">"</span>
               </p>
               <p class="signature">Kerean Watts</p>
               <p class="position">position in the company</p>
@@ -334,6 +346,32 @@
 
   </div>
 
+  </div>
+
+  <div class="modal" id="modal-gallery" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+          <!--<button class="close" type="button" data-dismiss="modal">×</button>-->
+
+        <div class="modal-body">
+          <div id="modal-carousel" class="carousel">
+
+            <div class="carousel-inner">
+              <div class="item active"> <img src="images/exp-1.png" width="100%"></div>
+
+              <div class="item"><img src="images/exp-2.png" width="100%"></div>
+              <div class="item"><img src="images/exp-3.png" width="100%"></div>
+              <div class="item"><img src="images/exp-4.png" width="100%"></div>
+            </div>
+
+            <a class="carousel-control left" href="#modal-carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            <a class="carousel-control right" href="#modal-carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   </body>
 </html>
