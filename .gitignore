@@ -1,0 +1,8 @@
+.idea
+.DS_Store
+app/.DS_Store
+npm-debug.log
+public/.sass-cache
+node_modules
+app/config/parameters.json
+app/resources/database.sqlite
