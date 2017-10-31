@@ -724,49 +724,76 @@ img {
   padding: 3vw 14vw;
   background: white;
 }
-/* line 262, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
+.content #section-experience .exp-images {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+/* line 263, ../sass/style.scss */
 .content #section-experience .exp-images img {
   width: 50%;
   height: auto;
-  display: inline-block;
-  float: left;
 }
-/* line 267, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 .content #section-experience .exp-images img:hover {
   cursor: pointer;
 }
-/* line 281, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .content #section-testimonials {
   padding: 3vw 14vw;
   background: white;
 }
-/* line 285, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 .content #section-testimonials h3 {
   margin-bottom: 50px;
 }
-/* line 289, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 .content #section-testimonials .client {
   color: #212b2d;
 }
-/* line 291, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 .content #section-testimonials .client .quote {
   padding: 20px 0;
   border-top: 5px solid #212b2d;
 }
-/* line 294, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
 .content #section-testimonials .client .quote .text {
   font-size: 18px;
   line-height: 28px;
   text-align: left;
   word-wrap: break-word;
 }
-/* line 299, ../sass/style.scss */
+/* line 291, ../sass/style.scss */
 .content #section-testimonials .client .quote .text .quote-sign {
   font-size: 50px;
   vertical-align: bottom;
   line-height: 20px;
 }
-/* line 305, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 .content #section-testimonials .client .quote .signature {
   margin: 20px 0 10px 0;
   text-align: right;
@@ -774,28 +801,28 @@ img {
   line-height: 20px;
   font-weight: bold;
 }
-/* line 312, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 .content #section-testimonials .client .quote .position {
   font-size: 15px;
   text-align: right;
 }
-/* line 320, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 .content #section-about {
   padding: 3vw 14vw;
   background: white;
 }
-/* line 324, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 .content #section-about .about-us p {
   margin-top: 40px;
   font-size: 25px;
   line-height: 33px;
 }
-/* line 331, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 .content #section-about .photos {
   margin: 50px 0;
   width: 100%;
 }
-/* line 334, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 .content #section-about .photos .row-photos {
   display: -webkit-box;
   display: -webkit-flex;
@@ -823,66 +850,83 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-/* line 337, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 .content #section-about .photos .person {
   padding: 0;
   width: 29%;
 }
-/* line 340, ../sass/style.scss */
+/* line 332, ../sass/style.scss */
 .content #section-about .photos .person .portrait {
   width: 100%;
-  height: 300px;
-  background-color: #212b2d;
+  height: 20vw;
 }
-/* line 345, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 .content #section-about .photos .person .who {
   margin: 15px 0;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
 }
-/* line 352, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .content #section-about .photos .person #person-1 {
-  background-image: url("../images/faces/IMG_0044.jpg");
+  background-image: url("../images/faces/Anton.jpg");
   background-size: cover;
   background-position: top;
 }
-/* line 357, ../sass/style.scss */
+/* line 348, ../sass/style.scss */
 .content #section-about .photos .person #person-2 {
-  background-image: url("../images/faces/IMG_0032.jpg");
+  background-image: url("../images/faces/Kyrylo.jpg");
   background-size: cover;
   background-position: top;
 }
-/* line 362, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 .content #section-about .photos .person #person-3 {
-  background-image: url("../images/faces/IMG_0039.jpg");
+  background-image: url("../images/faces/Valentyn.jpg");
   background-size: cover;
   background-position: top;
 }
-/* line 372, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
+.content #section-about .photos .person #person-4 {
+  background-image: url("../images/faces/Iryna.jpg");
+  background-size: cover;
+  background-position: top;
+}
+/* line 365, ../sass/style.scss */
+.content #section-about .photos .person #person-5 {
+  background-image: url("../images/faces/Yurii.jpg");
+  background-size: cover;
+  background-position: top;
+}
+/* line 371, ../sass/style.scss */
+.content #section-about .photos .person #person-6 {
+  background-image: url("../images/faces/Olga.jpg");
+  background-size: cover;
+  background-position: top;
+}
+/* line 381, ../sass/style.scss */
 .content #section-contacts {
   padding: 3vw 14vw;
   background: white;
 }
-/* line 375, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 .content #section-contacts .contacts-text {
   margin: 40px 0;
   font-size: 25px;
   line-height: 33px;
   color: #212b2d;
 }
-/* line 381, ../sass/style.scss */
+/* line 390, ../sass/style.scss */
 .content #section-contacts .contact-form {
   width: 100%;
   padding: 0 40px;
 }
-/* line 384, ../sass/style.scss */
+/* line 393, ../sass/style.scss */
 .content #section-contacts .contact-form form {
   width: 100%;
   padding: 0 40px;
   font-size: 25px;
 }
-/* line 388, ../sass/style.scss */
+/* line 397, ../sass/style.scss */
 .content #section-contacts .contact-form form input, .content #section-contacts .contact-form form textarea {
   -webkit-border-radius: 0;
   -khtml-border-radius: 0;
@@ -928,30 +972,30 @@ img {
   color: #414a4b;
   font-size: 22px;
 }
-/* line 403, ../sass/style.scss */
+/* line 412, ../sass/style.scss */
 .content #section-contacts .contact-form form input:active, .content #section-contacts .contact-form form input:focus, .content #section-contacts .contact-form form textarea:active, .content #section-contacts .contact-form form textarea:focus {
   outline: none;
   box-shadow: none;
   border: 2px solid #235a87;
 }
-/* line 409, ../sass/style.scss */
+/* line 418, ../sass/style.scss */
 .content #section-contacts .contact-form form textarea {
   resize: none;
 }
-/* line 417, ../sass/style.scss */
+/* line 426, ../sass/style.scss */
 .content #section-contacts .submit-contacts-button {
   margin: 5px 0 !important;
 }
-/* line 422, ../sass/style.scss */
+/* line 431, ../sass/style.scss */
 .content .contact-form_block {
   padding: 30px 50px;
   background-color: #212b2d;
-  background-image: url("../images/footer_bg.jpg");
+  background-image: url("../images/bg.jpg");
   background-size: cover;
-  background-position: right;
+  background-position: bottom;
   color: white;
 }
-/* line 429, ../sass/style.scss */
+/* line 438, ../sass/style.scss */
 .content .contact-form_block .bottom-menu {
   display: -webkit-box;
   display: -webkit-flex;
@@ -980,55 +1024,55 @@ img {
   flex-wrap: wrap;
   width: 100%;
 }
-/* line 434, ../sass/style.scss */
+/* line 443, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li {
   margin: 0 10px;
 }
-/* line 436, ../sass/style.scss */
+/* line 445, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li.active {
   background: none !important;
 }
-/* line 439, ../sass/style.scss */
+/* line 448, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a {
   padding: 0 0 4px 0;
   color: white;
   font-size: 17px;
 }
-/* line 444, ../sass/style.scss */
+/* line 453, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a:hover {
   color: white;
   background: none;
   border-bottom: 2px solid white;
 }
-/* line 449, ../sass/style.scss */
+/* line 458, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a:active {
   color: white;
   background: none;
   border-bottom: 2px solid white;
 }
-/* line 454, ../sass/style.scss */
+/* line 463, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a:visited {
   color: white;
   background: none;
 }
-/* line 458, ../sass/style.scss */
+/* line 467, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a:focus {
   color: white;
   background: none;
   outline: none;
 }
-/* line 468, ../sass/style.scss */
+/* line 477, ../sass/style.scss */
 .content .contact-form_block .contact-form {
   width: 100%;
   padding-left: 40px;
 }
-/* line 471, ../sass/style.scss */
+/* line 480, ../sass/style.scss */
 .content .contact-form_block .contact-form form {
   width: 100%;
   border: 1px solid white;
   padding: 40px;
 }
-/* line 475, ../sass/style.scss */
+/* line 484, ../sass/style.scss */
 .content .contact-form_block .contact-form form input, .content .contact-form_block .contact-form form textarea {
   -webkit-border-radius: 0;
   -khtml-border-radius: 0;
@@ -1064,38 +1108,38 @@ img {
   /* Firefox 18- */
   color: white;
 }
-/* line 488, ../sass/style.scss */
+/* line 497, ../sass/style.scss */
 .content .contact-form_block .contact-form form input:active, .content .contact-form_block .contact-form form input:focus, .content .contact-form_block .contact-form form textarea:active, .content .contact-form_block .contact-form form textarea:focus {
   outline: none;
   box-shadow: none;
 }
-/* line 493, ../sass/style.scss */
+/* line 502, ../sass/style.scss */
 .content .contact-form_block .contact-form form textarea {
   resize: none;
 }
-/* line 502, ../sass/style.scss */
+/* line 511, ../sass/style.scss */
 .content .two-buttons {
   padding: 0 50px;
 }
-/* line 504, ../sass/style.scss */
+/* line 513, ../sass/style.scss */
 .content .two-buttons .wrap-btn {
   padding: 0 45px;
 }
-/* line 506, ../sass/style.scss */
+/* line 515, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button {
   margin: 90px 0;
   padding: 20px 15px;
 }
-/* line 509, ../sass/style.scss */
+/* line 518, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button:hover {
   cursor: pointer;
 }
-/* line 513, ../sass/style.scss */
+/* line 522, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button .btn-text {
   font-size: 25px;
   color: white;
 }
-/* line 517, ../sass/style.scss */
+/* line 526, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button-dark {
   -webkit-transition: all, ease, 0.4s;
   -khtml-transition: all, ease, 0.4s;
@@ -1105,31 +1149,31 @@ img {
   transition: all, ease, 0.4s;
   background-color: #212b2d;
 }
-/* line 521, ../sass/style.scss */
+/* line 530, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button-dark:hover {
   background-color: #235a87;
 }
-/* line 526, ../sass/style.scss */
+/* line 535, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button-light {
   background-color: #235a87;
 }
-/* line 531, ../sass/style.scss */
+/* line 540, ../sass/style.scss */
 .content .two-buttons .wrap-btn .anchor {
   text-decoration: none;
 }
-/* line 533, ../sass/style.scss */
+/* line 542, ../sass/style.scss */
 .content .two-buttons .wrap-btn .anchor:hover, .content .two-buttons .wrap-btn .anchor:focus, .content .two-buttons .wrap-btn .anchor:active {
   text-decoration: none;
   color: white;
 }
-/* line 542, ../sass/style.scss */
+/* line 551, ../sass/style.scss */
 .content .section-header {
   color: #235a87;
   font-size: 30px;
   font-weight: bold;
 }
 
-/* line 549, ../sass/style.scss */
+/* line 558, ../sass/style.scss */
 .parallax {
   perspective: 1px;
   height: 100vh;
@@ -1138,7 +1182,7 @@ img {
   overflow-y: auto;
 }
 
-/* line 556, ../sass/style.scss */
+/* line 565, ../sass/style.scss */
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -1146,17 +1190,57 @@ img {
   bottom: 0;
   left: -7px;
 }
-/* line 562, ../sass/style.scss */
+/* line 571, ../sass/style.scss */
 .parallax__layer--bottom {
   top: 100vh;
 }
 
-/* line 566, ../sass/style.scss */
+/* line 575, ../sass/style.scss */
 .parallax__layer--base {
   transform: translateZ(0);
 }
 
-/* line 569, ../sass/style.scss */
+/* line 578, ../sass/style.scss */
 .parallax__layer--back {
   transform: translateZ(-1px) scale(2);
+}
+
+/* line 581, ../sass/style.scss */
+.modal-dialog {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+}
+/* line 586, ../sass/style.scss */
+.modal-dialog .modal-content {
+  width: 80vw;
+}
+/* line 588, ../sass/style.scss */
+.modal-dialog .modal-content .modal-body {
+  padding: 0;
 }
