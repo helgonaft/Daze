@@ -1,0 +1,27 @@
+{
+  "name": "Daze",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "serve": "pm2 start ./app.json",
+    "logs": "pm2 logs",
+    "unserve": "pm2 delete Daze",
+    "sync": "node ./models/db sync"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "http-status": "^1.0.1",
+    "jade": "~1.11.0",
+    "lodash": "^4.17.4",
+    "morgan": "~1.8.1",
+    "nodemailer": "^4.3.1",
+    "pm2": "^2.7.2",
+    "sequelize": "^4.20.1",
+    "serve-favicon": "~2.4.2",
+    "sqlite3": "^3.1.13"
+  }
+}
