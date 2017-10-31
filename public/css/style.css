@@ -2,19 +2,12 @@
   < Imports >
 */
 @font-face {
-  font-family: 'OpenSansHebrew-Regular';
-  src: url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.eot");
-  src: url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.eot") format("embedded-opentype"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff") format("woff"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.ttf") format("truetype"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.svg") format("svg");
+  font-family: 'HelveticaNeue-Bold';
+  src: url("../fonts/HelveticaNeueBold.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'OpenSansHebrew-Light';
-  src: url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.eot");
-  src: url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.eot") format("embedded-opentype"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff") format("woff"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.ttf") format("truetype"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.svg") format("svg");
-}
-@font-face {
-  font-family: 'OpenSansHebrew-Bold';
-  src: url("../fonts/OpenSansHebrew/OpenSansHebrew-Bold.eot");
-  src: url("../fonts/OpenSansHebrew/OpenSansHebrew-Bold.eot") format("embedded-opentype"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff") format("woff"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Bold.ttf") format("truetype"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Bold.svg") format("svg");
+  font-family: 'HelveticaNeue-Light';
+  src: url("../fonts/HelveticaNeueLight.ttf") format("truetype");
 }
 /*
 This mixin does not allow to use multiple box-shadows
@@ -205,6 +198,7 @@ body {
 body,
 input {
   line-height: 1em;
+  font-family: Helvetica;
   color: #333;
   -webkit-font-smoothing: antialiased;
 }
@@ -223,47 +217,47 @@ input {
   }
 }
 
-/* line 37, ../sass/base/_base.scss */
+/* line 36, ../sass/base/_base.scss */
 main {
   display: block;
 }
 
-/* line 41, ../sass/base/_base.scss */
+/* line 40, ../sass/base/_base.scss */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 46, ../sass/base/_base.scss */
+/* line 45, ../sass/base/_base.scss */
 ul, ol {
   list-style: none;
 }
 
-/* line 50, ../sass/base/_base.scss */
+/* line 49, ../sass/base/_base.scss */
 label {
   display: block;
 }
 
-/* line 54, ../sass/base/_base.scss */
+/* line 53, ../sass/base/_base.scss */
 input,
 select {
   border: none;
 }
 
-/* line 59, ../sass/base/_base.scss */
+/* line 58, ../sass/base/_base.scss */
 input[type="submit"] {
   background-color: initial;
   border: none;
   cursor: pointer;
 }
 
-/* line 65, ../sass/base/_base.scss */
+/* line 64, ../sass/base/_base.scss */
 input[type="search"] {
   -webkit-appearance: none;
   border: none;
 }
 
-/* line 70, ../sass/base/_base.scss */
+/* line 69, ../sass/base/_base.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
@@ -271,24 +265,24 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-/* line 77, ../sass/base/_base.scss */
+/* line 76, ../sass/base/_base.scss */
 button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
-/* line 82, ../sass/base/_base.scss */
+/* line 81, ../sass/base/_base.scss */
 button::-moz-focus-inner {
   padding: 0;
   border: none;
 }
 
-/* line 88, ../sass/base/_base.scss */
+/* line 87, ../sass/base/_base.scss */
 img {
   display: block;
 }
 
-/* line 93, ../sass/base/_base.scss */
+/* line 92, ../sass/base/_base.scss */
 * {
   -webkit-box-sizing: border-box;
   -khtml-box-sizing: border-box;
@@ -866,7 +860,78 @@ img {
   line-height: 33px;
   color: #212b2d;
 }
-/* line 364, ../sass/style.scss */
+/* line 362, ../sass/style.scss */
+.content #section-contacts .contact-form {
+  width: 100%;
+  padding: 0 40px;
+}
+/* line 365, ../sass/style.scss */
+.content #section-contacts .contact-form form {
+  width: 100%;
+  padding: 0 40px;
+  font-size: 25px;
+}
+/* line 369, ../sass/style.scss */
+.content #section-contacts .contact-form form input, .content #section-contacts .contact-form form textarea {
+  -webkit-border-radius: 0;
+  -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: border, ease, 0.5s;
+  -khtml-transition: border, ease, 0.5s;
+  -moz-transition: border, ease, 0.5s;
+  -ms-transition: border, ease, 0.5s;
+  -o-transition: border, ease, 0.5s;
+  transition: border, ease, 0.5s;
+  padding: 20px 10px;
+  font-size: 22px;
+  background: transparent;
+  border: 2px solid #414a4b;
+  color: #212b2d;
+  outline: none;
+  box-shadow: none;
+}
+/* line 414, ../sass/helpers/_mixins.scss */
+.content #section-contacts .contact-form form input::-webkit-input-placeholder, .content #section-contacts .contact-form form textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #414a4b;
+  font-size: 22px;
+}
+/* line 418, ../sass/helpers/_mixins.scss */
+.content #section-contacts .contact-form form input::-moz-placeholder, .content #section-contacts .contact-form form textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #414a4b;
+  font-size: 22px;
+}
+/* line 422, ../sass/helpers/_mixins.scss */
+.content #section-contacts .contact-form form input:-ms-input-placeholder, .content #section-contacts .contact-form form textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #414a4b;
+  font-size: 22px;
+}
+/* line 426, ../sass/helpers/_mixins.scss */
+.content #section-contacts .contact-form form input:-moz-placeholder, .content #section-contacts .contact-form form textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #414a4b;
+  font-size: 22px;
+}
+/* line 384, ../sass/style.scss */
+.content #section-contacts .contact-form form input:active, .content #section-contacts .contact-form form input:focus, .content #section-contacts .contact-form form textarea:active, .content #section-contacts .contact-form form textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid #235a87;
+}
+/* line 390, ../sass/style.scss */
+.content #section-contacts .contact-form form textarea {
+  resize: none;
+}
+/* line 398, ../sass/style.scss */
+.content #section-contacts .submit-contacts-button {
+  margin: 5px 0 !important;
+}
+/* line 403, ../sass/style.scss */
 .content .contact-form_block {
   padding: 30px 50px;
   background-color: #212b2d;
@@ -875,7 +940,7 @@ img {
   background-position: right;
   color: white;
 }
-/* line 371, ../sass/style.scss */
+/* line 410, ../sass/style.scss */
 .content .contact-form_block .bottom-menu {
   display: -webkit-box;
   display: -webkit-flex;
@@ -904,55 +969,55 @@ img {
   flex-wrap: wrap;
   width: 100%;
 }
-/* line 376, ../sass/style.scss */
+/* line 415, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li {
   margin: 0 10px;
 }
-/* line 378, ../sass/style.scss */
+/* line 417, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li.active {
   background: none !important;
 }
-/* line 381, ../sass/style.scss */
+/* line 420, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a {
   padding: 0 0 4px 0;
   color: white;
   font-size: 17px;
 }
-/* line 386, ../sass/style.scss */
+/* line 425, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a:hover {
   color: white;
   background: none;
   border-bottom: 2px solid white;
 }
-/* line 391, ../sass/style.scss */
+/* line 430, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a:active {
   color: white;
   background: none;
   border-bottom: 2px solid white;
 }
-/* line 396, ../sass/style.scss */
+/* line 435, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a:visited {
   color: white;
   background: none;
 }
-/* line 400, ../sass/style.scss */
+/* line 439, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a:focus {
   color: white;
   background: none;
   outline: none;
 }
-/* line 410, ../sass/style.scss */
+/* line 449, ../sass/style.scss */
 .content .contact-form_block .contact-form {
   width: 100%;
   padding-left: 40px;
 }
-/* line 413, ../sass/style.scss */
+/* line 452, ../sass/style.scss */
 .content .contact-form_block .contact-form form {
   width: 100%;
   border: 1px solid white;
   padding: 40px;
 }
-/* line 417, ../sass/style.scss */
+/* line 456, ../sass/style.scss */
 .content .contact-form_block .contact-form form input, .content .contact-form_block .contact-form form textarea {
   -webkit-border-radius: 0;
   -khtml-border-radius: 0;
@@ -988,38 +1053,38 @@ img {
   /* Firefox 18- */
   color: white;
 }
-/* line 430, ../sass/style.scss */
+/* line 469, ../sass/style.scss */
 .content .contact-form_block .contact-form form input:active, .content .contact-form_block .contact-form form input:focus, .content .contact-form_block .contact-form form textarea:active, .content .contact-form_block .contact-form form textarea:focus {
   outline: none;
   box-shadow: none;
 }
-/* line 435, ../sass/style.scss */
+/* line 474, ../sass/style.scss */
 .content .contact-form_block .contact-form form textarea {
   resize: none;
 }
-/* line 444, ../sass/style.scss */
+/* line 483, ../sass/style.scss */
 .content .two-buttons {
   padding: 0 50px;
 }
-/* line 446, ../sass/style.scss */
+/* line 485, ../sass/style.scss */
 .content .two-buttons .wrap-btn {
-  padding: 0 50px;
+  padding: 0 45px;
 }
-/* line 448, ../sass/style.scss */
+/* line 487, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button {
   margin: 90px 0;
   padding: 20px 15px;
 }
-/* line 451, ../sass/style.scss */
+/* line 490, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button:hover {
   cursor: pointer;
 }
-/* line 455, ../sass/style.scss */
+/* line 494, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button .btn-text {
   font-size: 25px;
   color: white;
 }
-/* line 459, ../sass/style.scss */
+/* line 498, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button-dark {
   -webkit-transition: all, ease, 0.4s;
   -khtml-transition: all, ease, 0.4s;
@@ -1029,22 +1094,31 @@ img {
   transition: all, ease, 0.4s;
   background-color: #212b2d;
 }
-/* line 463, ../sass/style.scss */
+/* line 502, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button-dark:hover {
   background-color: #235a87;
 }
-/* line 468, ../sass/style.scss */
+/* line 507, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button-light {
   background-color: #235a87;
 }
-/* line 477, ../sass/style.scss */
+/* line 512, ../sass/style.scss */
+.content .two-buttons .wrap-btn .anchor {
+  text-decoration: none;
+}
+/* line 514, ../sass/style.scss */
+.content .two-buttons .wrap-btn .anchor:hover, .content .two-buttons .wrap-btn .anchor:focus, .content .two-buttons .wrap-btn .anchor:active {
+  text-decoration: none;
+  color: white;
+}
+/* line 523, ../sass/style.scss */
 .content .section-header {
   color: #235a87;
   font-size: 30px;
   font-weight: bold;
 }
 
-/* line 484, ../sass/style.scss */
+/* line 530, ../sass/style.scss */
 .parallax {
   perspective: 1px;
   height: 100vh;
@@ -1053,7 +1127,7 @@ img {
   overflow-y: auto;
 }
 
-/* line 491, ../sass/style.scss */
+/* line 537, ../sass/style.scss */
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -1061,17 +1135,17 @@ img {
   bottom: 0;
   left: -7px;
 }
-/* line 497, ../sass/style.scss */
+/* line 543, ../sass/style.scss */
 .parallax__layer--bottom {
   top: 100vh;
 }
 
-/* line 501, ../sass/style.scss */
+/* line 547, ../sass/style.scss */
 .parallax__layer--base {
   transform: translateZ(0);
 }
 
-/* line 504, ../sass/style.scss */
+/* line 550, ../sass/style.scss */
 .parallax__layer--back {
   transform: translateZ(-1px) scale(2);
 }
