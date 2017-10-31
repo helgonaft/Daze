@@ -19,7 +19,7 @@ const smtpTransport = nodemailer.createTransport({
 
 const defaultMailOptions = {
   from: "inbox@daze.tech",
-  to: "mail@daze.com",
+  to: "mail@daze.tech",
   subject: "inbox from website ✔",
   text: "something went wrong",
   html: "<b>something went wrong</b>"
