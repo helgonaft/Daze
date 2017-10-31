@@ -1,0 +1,8 @@
+{
+  "name": "Daze",
+  "script": "./bin/www",
+  "watch": false,
+  "env": {
+    "PORT": 6969
+  }
+}

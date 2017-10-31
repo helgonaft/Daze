@@ -26,5 +26,24 @@ $(document).ready(function(){
             $('.industry').find('span').removeClass('glyphicon-triangle-top').addClass( 'glyphicon-triangle-bottom');
         }
     });
-    
+    $('.submit-contacts-button').click(function() {
+        var form = $('form[name="contact"]');
+        var data = {};
+        form.serializeArray().forEach(function(formItem) {
+          data[formItem.name] = formItem.value;
+        });
+        $.ajax({ // todo: email validation
+          method: "POST",
+          url: "/api/sendMail",
+          data: JSON.stringify(data),
+          contentType: "application/json",
+          success: function () {
+           console.log('success') // todo: tell user that all right
+          },
+          error: function () {
+           console.log('error') // todo: tell user that shit happens
+          }
+        });
+        console.log(data);
+    })
 });
