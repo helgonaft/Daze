@@ -20,13 +20,66 @@
 .main-view{
   @include flex-parent($fd: column, $jc: center, $ai: center);
   height: 100vh;
-  background-image: url('../images/bg.png');
+  background-image: url('../images/bg.jpg');
   background-size: cover;
   background-position: center;
-    header {
+    .menu {
       position: absolute;
-      top: 20px;
-      left: 20px;
+      top: 0;
+      right: 0;
+      padding: 35px 10px 0 0;
+        .navbar-nav {
+          li {
+            margin: 0 10px;
+            &.active {
+              background: none!important;
+            }
+            a {
+              padding:0 0 4px 0;
+              color: white;
+              font-size: 17px;
+
+              &:hover{
+                color: white;
+                background: none;
+                border-bottom: 2px solid white;
+              }
+              &:active{
+                color: white;
+                background: none;
+                border-bottom: 2px solid white;
+              }
+              &:visited{
+                color: white;
+                background: none;
+              }
+              &:focus{
+                color: white;
+                background: none;
+                outline: none;
+              }
+            }
+          }
+        }
+    }
+    .logo {
+      position: absolute;
+      top: 20vh;
+      left: 9.7vw;
+        .daze-logo {
+          img {
+            width: 42.2vw;
+          }
+        }
+        .header-text {
+          text-align: left;
+          color: white;
+            h1 {
+              margin-top: 40px;
+              font-size: 2.1vw;
+            }
+        }
+
     }
     .main-header {
       border-left: 3px solid white;
@@ -65,12 +118,58 @@
   }
 
   #section-video {
-    height: 28vw;
-    background-color: $brand-gray;
+    @include flex-parent($fd: row, $ai: center, $jc: center);
+    height: 280px;
+    background-color:  #e7ebf0;
+      #jp_container_1 {
+        @include flex-parent($fd: column, $ai: center, $jc: space-between);
+        height: 313px;
+        width: auto;
+
+        video {
+          width: 230px;
+          height: 300px;
+          object-fit: cover;
+        }
+        .jp-interface {
+          @include flex-parent($fd:row,$jc: space-between, $ai: center);
+          padding: 5px 10px;
+          .jp-controls {
+            @include flex-parent($fd:row,$jc: space-between, $ai: center);
+            width: 20px;
+            margin: 0;
+            button {
+              margin:0;
+            }
+          }
+          .jp-current-time {
+            width: 60px;
+            text-align: center;
+            padding: 0;
+            font-size: 1em;
+          }
+          .jp-progress {
+            width: calc(85% - 85px);
+            margin: 0;
+          }
+          .jp-controls-holder {
+            @include flex-parent($fd:row,$jc: space-between, $ai: center);
+            width: 40px;
+            margin: 0;
+
+            .jp-toggles {
+              margin: 0;
+            }
+          }
+
+        }
+
+      }
   }
 
   #section-features {
     padding: 3vw 14vw;
+    background: white;
 
       .feature {
         @include flex-parent($fd: column, $jc: flex-end, $ai: flex-start);
@@ -99,6 +198,7 @@
 
   #section-industries {
     padding: 3vw 14vw;
+    background: white;
       .industries {
         width: 100%;
         padding: 50px 0;
@@ -106,6 +206,11 @@
             padding: 15px 45px 25px 30px;
             margin-bottom: 15px;
             border-bottom: 1px solid $brand-dark-color;
+            border-left: 5px solid transparent;
+
+            &:hover {
+              cursor: pointer;
+            }
 
             &:last-child {
               margin-bottom: 0;
@@ -139,20 +244,35 @@
                 }
             }
           }
+          .details {
+            display: none;
+              p {
+                font-size: 22px;
+                line-height: 30px;
+              }
+          }
       }
   }
 
   #section-experience {
     padding: 3vw 14vw;
-      img {
-        width: 100%;
-        height: auto;
+    background: white;
+    .exp-images {
+        @include flex-parent($fd: row, $jc: center, $ai: flex-start, $fw: wrap);
         margin-top: 40px;
-      }
+        img {
+          width: 50%;
+          height: auto;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+    }
   }
 
   #section-testimonials {
     padding: 3vw 14vw;
+    background: white;
 
     h3 {
       margin-bottom: 50px;
@@ -168,6 +288,11 @@
           line-height: 28px;
           text-align: left;
           word-wrap: break-word;
+            .quote-sign {
+              font-size: 50px;
+              vertical-align: bottom;
+              line-height: 20px;
+            }
         }
         .signature {
           margin: 20px 0 10px 0;
@@ -186,12 +311,14 @@
 
   #section-about {
     padding: 3vw 14vw;
+    background: white;
     .about-us {
       p {
         margin-top: 40px;
         font-size: 25px;
         line-height: 33px;
       }
+
     }
     .photos {
       margin: 50px 0;
@@ -201,54 +328,233 @@
       }
       .person {
         padding: 0;
-        width: 32%;
+        width: 29%;
         .portrait {
           width: 100%;
-          height: 200px;
-          background-color: $brand-dark-color;
+          height: 20vw;
+
         }
         .who {
           margin: 15px 0;
+          color: $brand-color;
           font-size: 24px;
           line-height: 24px;
+          text-align: center;
+          font-weight: bold;
+
+        }
+        .position {
+          font-size: 15px;
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: bold;
+          color: $brand-dark-color;
+
+        }
+        #person-1 {
+          background-image: url('../images/faces/Anton.jpg');
+          background-size: cover;
+          background-position: top;
+
+        }
+        #person-2 {
+          background-image: url('../images/faces/Kyrylo.jpg');
+          background-size: cover;
+          background-position: top;
+        }
+        #person-3 {
+          background-image: url('../images/faces/Valentyn.jpg');
+          background-size: cover;
+          background-position: top;
+
+        }
+        #person-4 {
+          background-image: url('../images/faces/Iryna.jpg');
+          background-size: cover;
+          background-position: top;
+
+        }
+        #person-5 {
+          background-image: url('../images/faces/Yurii.jpg');
+          background-size: cover;
+          background-position: top;
+
+        }
+        #person-6 {
+          background-image: url('../images/faces/Olga.jpg');
+          background-size: cover;
+          background-position: top;
 
         }
       }
-
-
     }
   }
 
   #section-contacts {
     padding: 3vw 14vw;
+    background: white;
     .contacts-text {
       margin: 40px 0;
       font-size: 25px;
       line-height: 33px;
       color: $brand-dark-color;
     }
+    .contact-form {
+      width: 100%;
+      padding: 0 40px;
+      form {
+        width: 100%;
+        padding: 0 40px;
+        font-size: 25px;
+        input, textarea {
+          @include border-radius(0);
+          @include placeholder{
+            color: $brand-gray;
+            font-size: 22px;
+          }
+          @include transition(border, ease, 0.5s);
+          padding: 20px 10px;
+          font-size: 22px;
+          background: transparent;
+          border:  2px solid $brand-gray;
+          color: $brand-dark-color;
+          outline: none;
+          box-shadow: none;
+
+          &:active, &:focus{
+            outline: none;
+            box-shadow: none;
+            border:  2px solid $brand-color;
+          }
+        }
+        textarea {
+          resize: none;
+          //TODO: styling for scroll
+        }
+
+      }
+
+    }
+    .submit-contacts-button {
+      margin: 5px 0!important;
+    }
+  }
+
+  .contact-form_block {
+    padding: 30px 50px;
+    background-color: $brand-dark-color;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+      .bottom-menu {
+        @include flex-parent($fd: row, $ai: center, $jc: center);
+        width: 100%;
+
+        .navbar-nav {
+          li {
+            margin: 0 10px;
+            &.active {
+              background: none!important;
+            }
+            a {
+              padding:0 0 4px 0;
+              color: white;
+              font-size: 17px;
+
+              &:hover{
+                color: white;
+                background: none;
+                border-bottom: 2px solid white;
+              }
+              &:active{
+                color: white;
+                background: none;
+                border-bottom: 2px solid white;
+              }
+              &:visited{
+                color: white;
+                background: none;
+              }
+              &:focus{
+                color: white;
+                background: none;
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+
+      .contact-form {
+        width: 100%;
+        padding-left: 40px;
+          form {
+            width: 100%;
+            border: 1px solid white;
+            padding: 40px;
+              input, textarea {
+                @include border-radius(0);
+                @include placeholder{
+                  color: white;
+                }
+                padding: 15px 0 5px 0;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid white;
+                color: white;
+                outline: none;
+                box-shadow: none;
+
+                &:active, &:focus{
+                  outline: none;
+                  box-shadow: none;
+                }
+              }
+              textarea {
+                resize: none;
+                //TODO: styling for scroll
+              }
+          }
+
+      }
   }
 
   .two-buttons {
     padding: 0 50px;
     .wrap-btn {
-      padding: 0 50px;
+      padding: 0 45px;
       .button {
         margin: 90px 0;
         padding: 20px 15px;
+        &:hover {
+          cursor: pointer;
+        }
 
         .btn-text{
           font-size: 25px;
           color: white;
         }
         &-dark{
+          @include transition(all, ease, 0.4s);
           background-color: $brand-dark-color;
+
+          &:hover {
+            background-color: $brand-color;
+          }
         }
 
         &-light{
           background-color: $brand-color;
         }
 
+      }
+      .anchor {
+        text-decoration: none;
+        &:hover, &:focus, &:active {
+          text-decoration: none;
+          color: white;
+        }
       }
     }
 
@@ -273,7 +579,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  left: -6px;
+  left: -7px;
   &--bottom{
     top: 100vh;
   }
@@ -283,4 +589,17 @@
 }
 .parallax__layer--back {
   transform: translateZ(-1px) scale(2);
+}
+.modal-dialog {
+  @include flex-parent($fd: column, $jc: center);
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+  .modal-content{
+    width: 80vw;
+    .modal-body {
+      padding: 0;
+    }
+  }
+
 }
