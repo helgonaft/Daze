@@ -38,10 +38,16 @@ $(document).ready(function(){
           data: JSON.stringify(data),
           contentType: "application/json",
           success: function () {
-           console.log('success') // todo: tell user that all right
+           console.log('success');
+              $('.good-result').removeClass('is-hidden');
+              setTimeout(function(){$('.good-result').addClass('is-hidden')}, 5000);
           },
           error: function () {
-           console.log('error') // todo: tell user that shit happens
+           console.log('error');
+              var bad_result = "Oops... Something went wrong. Please write to mail@daze.tech";
+              $('.bad-result').removeClass('is-hidden');
+              $('.bad-result').text(bad_result);
+              setTimeout(function(){$('.bad-result').addClass('is-hidden')}, 5000);
           }
         });
         console.log(data);
