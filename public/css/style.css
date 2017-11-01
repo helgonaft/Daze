@@ -860,73 +860,83 @@ img {
   width: 100%;
   height: 20vw;
 }
-/* line 336, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .content #section-about .photos .person .who {
   margin: 15px 0;
+  color: #235a87;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  font-weight: bold;
 }
-/* line 343, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
+.content #section-about .photos .person .position {
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: #212b2d;
+}
+/* line 354, ../sass/style.scss */
 .content #section-about .photos .person #person-1 {
   background-image: url("../images/faces/Anton.jpg");
   background-size: cover;
   background-position: top;
 }
-/* line 348, ../sass/style.scss */
+/* line 360, ../sass/style.scss */
 .content #section-about .photos .person #person-2 {
   background-image: url("../images/faces/Kyrylo.jpg");
   background-size: cover;
   background-position: top;
 }
-/* line 353, ../sass/style.scss */
+/* line 365, ../sass/style.scss */
 .content #section-about .photos .person #person-3 {
   background-image: url("../images/faces/Valentyn.jpg");
   background-size: cover;
   background-position: top;
 }
-/* line 359, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 .content #section-about .photos .person #person-4 {
   background-image: url("../images/faces/Iryna.jpg");
   background-size: cover;
   background-position: top;
 }
-/* line 365, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 .content #section-about .photos .person #person-5 {
   background-image: url("../images/faces/Yurii.jpg");
   background-size: cover;
   background-position: top;
 }
-/* line 371, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 .content #section-about .photos .person #person-6 {
   background-image: url("../images/faces/Olga.jpg");
   background-size: cover;
   background-position: top;
 }
-/* line 381, ../sass/style.scss */
+/* line 393, ../sass/style.scss */
 .content #section-contacts {
   padding: 3vw 14vw;
   background: white;
 }
-/* line 384, ../sass/style.scss */
+/* line 396, ../sass/style.scss */
 .content #section-contacts .contacts-text {
   margin: 40px 0;
   font-size: 25px;
   line-height: 33px;
   color: #212b2d;
 }
-/* line 390, ../sass/style.scss */
+/* line 402, ../sass/style.scss */
 .content #section-contacts .contact-form {
   width: 100%;
   padding: 0 40px;
 }
-/* line 393, ../sass/style.scss */
+/* line 405, ../sass/style.scss */
 .content #section-contacts .contact-form form {
   width: 100%;
   padding: 0 40px;
   font-size: 25px;
 }
-/* line 397, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
 .content #section-contacts .contact-form form input, .content #section-contacts .contact-form form textarea {
   -webkit-border-radius: 0;
   -khtml-border-radius: 0;
@@ -972,21 +982,21 @@ img {
   color: #414a4b;
   font-size: 22px;
 }
-/* line 412, ../sass/style.scss */
+/* line 424, ../sass/style.scss */
 .content #section-contacts .contact-form form input:active, .content #section-contacts .contact-form form input:focus, .content #section-contacts .contact-form form textarea:active, .content #section-contacts .contact-form form textarea:focus {
   outline: none;
   box-shadow: none;
   border: 2px solid #235a87;
 }
-/* line 418, ../sass/style.scss */
+/* line 430, ../sass/style.scss */
 .content #section-contacts .contact-form form textarea {
   resize: none;
 }
-/* line 426, ../sass/style.scss */
+/* line 438, ../sass/style.scss */
 .content #section-contacts .submit-contacts-button {
   margin: 5px 0 !important;
 }
-/* line 431, ../sass/style.scss */
+/* line 443, ../sass/style.scss */
 .content .contact-form_block {
   padding: 30px 50px;
   background-color: #212b2d;
@@ -995,7 +1005,7 @@ img {
   background-position: bottom;
   color: white;
 }
-/* line 438, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 .content .contact-form_block .bottom-menu {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1024,55 +1034,55 @@ img {
   flex-wrap: wrap;
   width: 100%;
 }
-/* line 443, ../sass/style.scss */
+/* line 455, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li {
   margin: 0 10px;
 }
-/* line 445, ../sass/style.scss */
+/* line 457, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li.active {
   background: none !important;
 }
-/* line 448, ../sass/style.scss */
+/* line 460, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a {
   padding: 0 0 4px 0;
   color: white;
   font-size: 17px;
 }
-/* line 453, ../sass/style.scss */
+/* line 465, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a:hover {
   color: white;
   background: none;
   border-bottom: 2px solid white;
 }
-/* line 458, ../sass/style.scss */
+/* line 470, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a:active {
   color: white;
   background: none;
   border-bottom: 2px solid white;
 }
-/* line 463, ../sass/style.scss */
+/* line 475, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a:visited {
   color: white;
   background: none;
 }
-/* line 467, ../sass/style.scss */
+/* line 479, ../sass/style.scss */
 .content .contact-form_block .bottom-menu .navbar-nav li a:focus {
   color: white;
   background: none;
   outline: none;
 }
-/* line 477, ../sass/style.scss */
+/* line 489, ../sass/style.scss */
 .content .contact-form_block .contact-form {
   width: 100%;
   padding-left: 40px;
 }
-/* line 480, ../sass/style.scss */
+/* line 492, ../sass/style.scss */
 .content .contact-form_block .contact-form form {
   width: 100%;
   border: 1px solid white;
   padding: 40px;
 }
-/* line 484, ../sass/style.scss */
+/* line 496, ../sass/style.scss */
 .content .contact-form_block .contact-form form input, .content .contact-form_block .contact-form form textarea {
   -webkit-border-radius: 0;
   -khtml-border-radius: 0;
@@ -1108,38 +1118,38 @@ img {
   /* Firefox 18- */
   color: white;
 }
-/* line 497, ../sass/style.scss */
+/* line 509, ../sass/style.scss */
 .content .contact-form_block .contact-form form input:active, .content .contact-form_block .contact-form form input:focus, .content .contact-form_block .contact-form form textarea:active, .content .contact-form_block .contact-form form textarea:focus {
   outline: none;
   box-shadow: none;
 }
-/* line 502, ../sass/style.scss */
+/* line 514, ../sass/style.scss */
 .content .contact-form_block .contact-form form textarea {
   resize: none;
 }
-/* line 511, ../sass/style.scss */
+/* line 523, ../sass/style.scss */
 .content .two-buttons {
   padding: 0 50px;
 }
-/* line 513, ../sass/style.scss */
+/* line 525, ../sass/style.scss */
 .content .two-buttons .wrap-btn {
   padding: 0 45px;
 }
-/* line 515, ../sass/style.scss */
+/* line 527, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button {
   margin: 90px 0;
   padding: 20px 15px;
 }
-/* line 518, ../sass/style.scss */
+/* line 530, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button:hover {
   cursor: pointer;
 }
-/* line 522, ../sass/style.scss */
+/* line 534, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button .btn-text {
   font-size: 25px;
   color: white;
 }
-/* line 526, ../sass/style.scss */
+/* line 538, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button-dark {
   -webkit-transition: all, ease, 0.4s;
   -khtml-transition: all, ease, 0.4s;
@@ -1149,31 +1159,31 @@ img {
   transition: all, ease, 0.4s;
   background-color: #212b2d;
 }
-/* line 530, ../sass/style.scss */
+/* line 542, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button-dark:hover {
   background-color: #235a87;
 }
-/* line 535, ../sass/style.scss */
+/* line 547, ../sass/style.scss */
 .content .two-buttons .wrap-btn .button-light {
   background-color: #235a87;
 }
-/* line 540, ../sass/style.scss */
+/* line 552, ../sass/style.scss */
 .content .two-buttons .wrap-btn .anchor {
   text-decoration: none;
 }
-/* line 542, ../sass/style.scss */
+/* line 554, ../sass/style.scss */
 .content .two-buttons .wrap-btn .anchor:hover, .content .two-buttons .wrap-btn .anchor:focus, .content .two-buttons .wrap-btn .anchor:active {
   text-decoration: none;
   color: white;
 }
-/* line 551, ../sass/style.scss */
+/* line 563, ../sass/style.scss */
 .content .section-header {
   color: #235a87;
   font-size: 30px;
   font-weight: bold;
 }
 
-/* line 558, ../sass/style.scss */
+/* line 570, ../sass/style.scss */
 .parallax {
   perspective: 1px;
   height: 100vh;
@@ -1182,7 +1192,7 @@ img {
   overflow-y: auto;
 }
 
-/* line 565, ../sass/style.scss */
+/* line 577, ../sass/style.scss */
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -1190,22 +1200,22 @@ img {
   bottom: 0;
   left: -7px;
 }
-/* line 571, ../sass/style.scss */
+/* line 583, ../sass/style.scss */
 .parallax__layer--bottom {
   top: 100vh;
 }
 
-/* line 575, ../sass/style.scss */
+/* line 587, ../sass/style.scss */
 .parallax__layer--base {
   transform: translateZ(0);
 }
 
-/* line 578, ../sass/style.scss */
+/* line 590, ../sass/style.scss */
 .parallax__layer--back {
   transform: translateZ(-1px) scale(2);
 }
 
-/* line 581, ../sass/style.scss */
+/* line 593, ../sass/style.scss */
 .modal-dialog {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1236,11 +1246,11 @@ img {
   width: 80vw;
   margin: auto;
 }
-/* line 586, ../sass/style.scss */
+/* line 598, ../sass/style.scss */
 .modal-dialog .modal-content {
   width: 80vw;
 }
-/* line 588, ../sass/style.scss */
+/* line 600, ../sass/style.scss */
 .modal-dialog .modal-content .modal-body {
   padding: 0;
 }
