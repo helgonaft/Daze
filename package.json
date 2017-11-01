@@ -7,7 +7,8 @@
     "serve": "pm2 start ./app.json",
     "logs": "pm2 logs",
     "unserve": "pm2 delete Daze",
-    "sync": "node ./models/db sync"
+    "sync": "node ./models/db sync",
+    "stylesheets": "compass compile -e production --force"
   },
   "dependencies": {
     "body-parser": "~1.17.1",

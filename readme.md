@@ -1,6 +1,6 @@
 #Daze landing
 
-##run:
+### run:
 ```sh
 npm i
 ```
@@ -27,4 +27,8 @@ npm run logs
 ### stop server:
 ```sh
 npm run unserve
+```
+### build scss to css
+```sh
+compass compile -e production --force
 ```
