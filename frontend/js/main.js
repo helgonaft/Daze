@@ -1,12 +1,19 @@
 $(document).ready(function(){
     $('.anchor').click(function(event){
-        console.log($( $(this).attr('href') ));
         $('.parallax').animate({
             scrollTop: $( $(this).attr('href') ).offset().top +  $('.parallax').scrollTop()
         }, 600);
 
         event.preventDefault();
     });
+    $('.up').click(function(event){
+        $('.parallax').animate({
+            scrollTop:0
+        }, 600);
+
+        event.preventDefault();
+    });
+
 
     $(".industry").click(function(){
         var target_id = $(this).attr('data-id');
