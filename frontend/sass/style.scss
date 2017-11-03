@@ -63,6 +63,11 @@
       position: absolute;
       top: 20vh;
       left: 9.7vw;
+
+      @include mobile {
+        top: 34vh;
+        left: 26vw;
+      }
         .daze-logo {
           img {
             width: 42.2vw;
@@ -254,6 +259,7 @@
           .details {
             display: none;
               p {
+                margin-bottom: 10px;
                 font-size: 22px;
                 line-height: 30px;
               }
@@ -267,13 +273,23 @@
     .exp-images {
         @include flex-parent($fd: row, $jc: center, $ai: flex-start, $fw: wrap);
         margin-top: 40px;
-        img {
+
+        .preview-slide {
           width: 50%;
-          height: auto;
-          &:hover {
-            cursor: pointer;
+          background-color: $brand-dark-color;
+
+          img {
+            @include transition(opacity, ease, 0.2s);
+            width: 100%;
+            height: auto;
+            opacity: 0.2;
+            &:hover {
+              cursor: pointer;
+              opacity: 1;
+            }
           }
         }
+
     }
   }
 
@@ -321,7 +337,7 @@
     background: white;
     .about-us {
       p {
-        margin-top: 40px;
+        margin-top: 20px;
         font-size: 25px;
         line-height: 33px;
       }
