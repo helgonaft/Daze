@@ -170,8 +170,7 @@
   }
 
   #section-features {
-    padding: 3vw 14vw;
-    margin-top: 70px;
+    padding: 100px 14vw 3vw 14vw;
     background: white;
 
       .feature {
@@ -190,6 +189,7 @@
           }
 
           .feature-name {
+            padding-bottom: 10px;
             font-size: 26px;
             line-height: 26px;
           }
@@ -197,6 +197,9 @@
           .small-description {
             font-size: 15px;
             line-height: 16px;
+            @include mobile {
+              font-size: 16px;
+            }
           }
 
           &.feature-1 {
