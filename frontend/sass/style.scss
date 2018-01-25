@@ -27,7 +27,7 @@
       padding: 35px 10px 0 0;
         .navbar-nav {
           li {
-            margin: 0 10px;
+            margin: 0 13px;
             &.active {
               background: none!important;
             }
@@ -61,8 +61,8 @@
     }
     .logo {
       position: absolute;
-      top: 20vh;
-      left: 9.7vw;
+      top: 19vh;
+      left: 15vw;
 
       @include mobile {
         top: 34vh;
@@ -70,15 +70,15 @@
       }
         .daze-logo {
           img {
-            width: 42.2vw;
+            width: 35vw;
           }
         }
         .header-text {
-          text-align: left;
+          text-align: justify;
           color: white;
             h1 {
-              margin-top: 40px;
-              font-size: 2.1vw;
+              margin-top: 30px;
+              font-size: 1.74vw;
             }
         }
 
@@ -106,14 +106,50 @@
     background: white;
     header{
       h2 {
-        font-size: 40px;
+        font-size: 29px;
         color: $brand-dark-color;
+        font-weight: bold;
+
       }
       p {
+        width: 93%;
         margin-top: 25px;
-        font-size: 25px;
+        font-size: 23px;
         line-height: 33px;
         color: $brand-dark-color;
+      }
+    }
+    .serviceImages {
+      @include flex-parent($fd: row, $ai: center, $jc: space-between);
+      padding: 65px 0 0 0;
+
+      .imgWrapper {
+        position: relative;
+        &.hoverService {
+          background-color: #172a30;
+        }
+        img {
+          width:15.4vw;
+          &.hoveredImage {
+            opacity:0.34;
+            cursor: pointer;
+          }
+        }
+        .imgCapture {
+          @include flex-parent($fd: row, $ai: center, $jc: flex-start);
+          position: absolute;
+          top:0;
+          left:0;
+          height: 100%;
+          width:100%;
+
+          p {
+            color: white;
+            font-size: 2.19vw;
+            line-height: 2.3vw;
+            padding-left: 15px;
+          }
+        }
       }
     }
 
@@ -563,20 +599,19 @@
       }
   }
 
-  .two-buttons {
-    padding: 0 50px;
+  .submit-button {
     .wrap-btn {
-      padding: 0 45px;
+      @include flex-parent($fd: row, $ai: center, $jc: center);
       .button {
-        margin: 90px 0;
-        padding: 20px 15px;
+        margin: 70px 0;
+        padding: 15px 35px;
         &:hover {
           cursor: pointer;
         }
 
         .btn-text{
-          font-size: 25px;
-          line-height: 20px;
+          font-size: 1.68vw;
+          line-height: 1.68vw;
           color: white;
         }
         &-dark{

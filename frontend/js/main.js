@@ -14,6 +14,17 @@ $(document).ready(function(){
         event.preventDefault();
     });
 
+    $('.imgWrapper').mouseover(function(){
+        $(this).addClass('hoverService');
+        $(this).children('.imgCapture').removeClass('hidden');
+        $(this).children('img').addClass('hoveredImage');
+    });
+    $('.imgWrapper').mouseout(function(){
+        $(this).removeClass('hoverService');
+        $(this).children('.imgCapture').addClass('hidden');
+        $(this).children('img').removeClass('hoveredImage');
+    });
+
 
     $(".industry").click(function(){
         var target_id = $(this).attr('data-id');
