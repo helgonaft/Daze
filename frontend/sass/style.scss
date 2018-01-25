@@ -39,6 +39,10 @@
               color: white;
               font-size: 17px;
 
+              @include mobile {
+                font-size: 20px;
+              }
+
               &:hover{
                 color: white;
                 background: none;
@@ -69,21 +73,37 @@
 
       @include mobile {
         top: 34vh;
-        left: 26vw;
+        left: 0;
+        width: 100%;
       }
-        .daze-logo {
-          img {
-            width: 35vw;
+
+      .header-text {
+        text-align: justify;
+        color: white;
+        h1 {
+          margin-top: 30px;
+          font-size: 1.74vw;
+
+          @include mobile {
+            font-size: 3vw;
+            text-align: center;
           }
         }
-        .header-text {
-          text-align: justify;
-          color: white;
-            h1 {
-              margin-top: 30px;
-              font-size: 1.74vw;
-            }
+      }
+
+      .daze-logo {
+        img {
+          width: 35vw;
         }
+
+        @include mobile {
+          width: 100%;
+          img {
+            width: 61vw;
+            margin: auto;
+          }
+        }
+      }
 
     }
     .main-header {
@@ -480,6 +500,9 @@
       width: 70%;
       margin: auto;
       padding: 30px 0;
+      @include mobile {
+        width: 85%;
+      }
       form {
         width: 100%;
         padding: 0 40px;
